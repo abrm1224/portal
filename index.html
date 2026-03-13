@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL-MANE'A | Sovereign Defense</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #C5A059; --navy: #05080A; }
+        body { font-family: 'Montserrat', sans-serif; background: var(--navy); color: white; }
+        h1, h2, .gold-font { font-family: 'Cinzel', serif; color: var(--gold); }
+        .glass { background: rgba(255,255,255,0.03); backdrop-filter: blur(10px); border: 1px solid rgba(197,160,89,0.2); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- ניווט / Header -->
+    <nav class="fixed w-full z-50 glass p-5 flex justify-between items-center">
+        <div class="text-xl font-bold tracking-widest">AL-MANE'A <span class="text-white">المنيع</span></div>
+        <a href="#contact" class="text-[10px] border border-gold p-2 uppercase tracking-widest hover:bg-gold hover:text-black transition">Briefing</a>
+    </nav>
+
+    <!-- מסך ראשי / Hero -->
+    <section class="h-screen flex items-center px-8 relative">
+        <div class="absolute inset-0 opacity-30">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=1500" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 max-w-3xl">
+            <h4 class="text-gold uppercase tracking-[0.4em] text-xs mb-4">Sovereign Protection</h4>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">DEFENDING THE FUTURE.</h1>
+            <p class="text-slate-400 text-lg mb-8 italic">Discrete fortification engineering for the GCC elite. Born from Special Forces expertise.</p>
+            <a href="#contact" class="bg-[#C5A059] text-black px-8 py-4 font-bold uppercase tracking-widest text-xs">Request Access</a>
+        </div>
+    </section>
+
+    <!-- רמות הגנה / Defense Tiers -->
+    <section class="py-20 px-8 bg-black">
+        <h2 class="text-center text-3xl mb-12 italic uppercase">Defense Matrix</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass p-8 rounded">
+                <h3 class="gold-font mb-4 uppercase">Tactical</h3>
+                <p class="text-xs text-slate-400">Drone mitigation & fragment protection.</p>
+            </div>
+            <div class="glass p-8 border-gold rounded">
+                <h3 class="gold-font mb-4 uppercase">Kinetic</h3>
+                <p class="text-xs text-slate-400">Ballistic & Missile impact resilience.</p>
+            </div>
+            <div class="glass p-8 rounded">
+                <h3 class="gold-font mb-4 uppercase">Sovereign</h3>
+                <p class="text-xs text-slate-400">CBRN Air filtration & 120-day autonomy.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- לוגיסטיקה / Logistics -->
+    <section class="py-20 px-8 glass mx-4 my-10 rounded">
+        <h2 class="gold-font text-2xl mb-6 italic uppercase">Readiness & Logistics</h2>
+        <p class="text-sm text-slate-400 mb-6">Continuous supply rotation and technical support 24/7 during regional instability.</p>
+        <div class="border-t border-gold/20 pt-4 flex justify-between text-[10px] font-bold uppercase tracking-widest text-gold">
+            <span>• Managed Rations</span>
+            <span>• Medical Support</span>
+            <span>• Energy Autonomy</span>
+        </div>
+    </section>
+
+    <!-- צור קשר / Contact -->
+    <section id="contact" class="py-20 px-8 bg-[#05080A]">
+        <div class="max-w-xl mx-auto text-center border border-gold/20 p-10">
+            <h2 class="gold-font text-2xl mb-8 uppercase italic">Private Briefing</h2>
+            <form onsubmit="event.preventDefault(); alert('Secure Transmission Complete.');" class="space-y-6">
+                <input type="text" placeholder="Designation" class="w-full bg-transparent border-b border-gold/30 p-3 text-sm outline-none">
+                <input type="email" placeholder="Secure Email" class="w-full bg-transparent border-b border-gold/30 p-3 text-sm outline-none">
+                <button class="w-full bg-gold text-navy py-4 font-bold uppercase tracking-widest text-xs">Commence Briefing</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-[8px] opacity-30 tracking-[0.5em] uppercase">
+        © 2025 AL-MANE'A | DISCRETE DEFENSE | GCC
+    </footer>
+
+</body>
+</html>
+
